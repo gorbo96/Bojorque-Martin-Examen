@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Crear Nuevo Ticket</title>
+    <link href="estilo1.css" type="text/css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">    
+</head>
+<body>
+    <header>
+        <h1>Ticket</h1>        
+    </header>
+    <h2>Creacion de Ticket</h2>                
+        <form id='formulario01' method='POST' action='crearTicket.php'>                                    
+            <label>Placa:</label>
+            <input type='text' name='placa' id='placa' placeholder='Ingrese la placa' required/>
+            <label>Cedula Cliente:</label>
+            <input type='text' name='cedula' id='cedula' placeholder='Ingrese la cedula' required/>
+            <div>
+                <button type='submit' id='crear' name='crear'>Crear Ticket</button>
+                <button type='reset' id='cancelar' name='cancelar'>Limpiar</button>
+            </div>
+        </form>        
+</body>
+</html>

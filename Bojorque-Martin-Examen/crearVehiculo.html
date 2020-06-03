@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Prueba de rama</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilo1.css" type="text/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">    
+</head>
+
+<body>
+    <header>        
+        <h1>Creacion Vehiculo</h1>        
+    </header>
+    <section class="formulario">
+        <h2>Creacion de Vehiculo</h2>
+        <form id="formulario01" method="POST" action="crearVehiculo.php">
+            <label>Cedula Dueño</label>
+            <input type="text" name="cedula" id="cedula" placeholder="Ingrese la cedula" required />            
+            <label>Placa:</label>
+            <input type="text" name="placa" id="placa" placeholder="Ingrese la placa" required/>            
+            <label>Modelo:</label>
+            <input type="text" name="modelo" id="modelo" placeholder="Ingrese el modelo" required/>
+            <label>Marca:</label>
+            <input type="text" name="marca" id="marca" placeholder="Ingrese la marca" required/>            
+            <div>
+                <button type="submit" id="crear" name="crear">Crear Vehiculo</button>
+                <button type="reset" id="cancelar" name="cancelar">Limpiar</button>
+            </div>
+        </form>
+    </section>    
+</body>
+
+</html>
